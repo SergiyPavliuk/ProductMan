@@ -26,7 +26,7 @@ $(function(){
     /*============================*/
 	/* 03 - Swiper */
 	/*============================*/
-    Svar mySwiperHomeSlider = $('.swiper-container').swiper({
+    var mySwiperHomeSlider = $('.swiper-container').swiper({
 	  loop: true,
 	  pagination: '.pagination',
 	  paginationClickable: true,
@@ -36,17 +36,7 @@ $(function(){
 	});
     
       /*============================*/
-	/* 05 - Show and hide text */
-	/*============================*/
-    $('input[type="email"]').focus(function(){
-       $('.hide_text').show(1000) 
-    });
-    $('input[type="email"]').mouseout(function(){
-       $('.hide_text').hide(1000) 
-    });
-    
-      /*============================*/
-	/* 07 - SCROll */
+	/* 04 - SCROll */
 	/*============================*/
      var $menu = $("header");
 
@@ -59,16 +49,16 @@ $(function(){
         });
   
     /*============================*/
-	/* 07 - Page scroll to id master */
+	/* 05 - Page scroll to id master */
 	/*============================*/
     $("a[href*='#']").mPageScroll2id();
     /*============================*/
-	/* 08 - WOW */
+	/* 06 - WOW */
 	/*============================*/
     new WOW().init(); 
   
     /*============================*/
-	/* 09 - Animations */
+	/* 07 - Animations */
 	/*============================*/
     $('.header-text').addClass('fadeInDown');
     $('.slider-image').addClass('fadeInUp');
